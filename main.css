@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  background-color: #192a56;
+  padding-top: 16px 0;
+  color: #fff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* selecionar o filho direto do elemento header usa o sinal de maior que > */
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > .container footer > .container {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+nav {
+  background-color: #575fcf;
+  padding: 16px 0;
+  display: none;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* construindo o menu hambuguer que da as tres linhas onde clica para o hamburguer suspenso, temos que usar o displey= flex para alinhar a direite i menu hambuguer */
+
+.menu-hamburger {
+  width: 32px;
+  cursor: pointer;
+}
+
+.menu-hamburger span {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* finalizamos nossa sessao sobre a loja. */
+
+#sobre-a-loja img {
+  width: 400px;
+  margin-right: 24px;
+}
+
+section {
+  padding: 48px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+}
+
+.lista-veiculos {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+}
+
+/* descolando uma imagem da outra. */
+.lista-veiculos li {
+  list-style: none;
+  max-width: 30%;
+  margin-bottom: 24px;
+}
+
+.lista-veiculos li img {
+  max-width: 100%;
+}
+
+.lista-veiculos h3 {
+  margin: 16px 0;
+}
+
+.item-central {
+  margin: 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background-color: #119759;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 6pix;
+}
+
+.price {
+  margin: 16px 0;
+  display: block;
+}
+
+.form-campo {
+  margin-bottom: 16px;
+}
+
+.form-campo label {
+  font-weight: bold;
+  display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+  width: 100%;
+  display: block;
+  padding: 8px;
+}
+
+.form-campo textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* limitar a largura do formulario */
+
+form {
+  max-width: 360px;
+}
+
+form button {
+  max-width: 120px;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 16px;
+}
+
+footer li img {
+  height: 32px;
+}
